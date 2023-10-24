@@ -1,3 +1,12 @@
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+    title: 'Genesis',
+    description: 'ИИ - новая реальность',
+    icons: 'http://localhost:300/public/logo.png'
+}
+
 const LandingLayout = ({
   children
 }: {

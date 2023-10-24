@@ -60,8 +60,8 @@ const ConversationPage = () => {
   return ( 
     <div>
       <Heading
-        title="Conversation"
-        description="Our most advanced conversation model."
+        title="Общение"
+        description="Наша самая совершенная модель для общения."
         icon={MessageSquare}
         iconColor="text-violet-500"
         bgColor="bg-violet-500/10"
@@ -92,7 +92,7 @@ const ConversationPage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading} 
-                        placeholder="How do I calculate the radius of a circle?" 
+                        placeholder="Как вычислить радиус окружности?"
                         {...field}
                       />
                     </FormControl>
@@ -100,7 +100,7 @@ const ConversationPage = () => {
                 )}
               />
               <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-                Generate
+                Отправить
               </Button>
             </form>
           </Form>
@@ -112,7 +112,7 @@ const ConversationPage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started." />
+            <Empty label="Общение не началось." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (

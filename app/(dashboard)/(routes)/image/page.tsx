@@ -61,8 +61,8 @@ const PhotoPage = () => {
   return ( 
     <div>
       <Heading
-        title="Image Generation"
-        description="Turn your prompt into an image."
+        title="Генерация изображение"
+        description="Превратите текст в изображение."
         icon={ImageIcon}
         iconColor="text-pink-700"
         bgColor="bg-pink-700/10"
@@ -92,7 +92,7 @@ const PhotoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading} 
-                      placeholder="A picture of a horse in Swiss alps" 
+                      placeholder="Фотография лошади на горе"
                       {...field}
                     />
                   </FormControl>
@@ -160,7 +160,7 @@ const PhotoPage = () => {
               )}
             />
             <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-              Generate
+              Сгенерировать
             </Button>
           </form>
         </Form>
@@ -170,7 +170,7 @@ const PhotoPage = () => {
           </div>
         )}
         {photos.length === 0 && !isLoading && (
-          <Empty label="No images generated." />
+          <Empty label="История генераций пуста." />
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-8">
           {photos.map((src) => (

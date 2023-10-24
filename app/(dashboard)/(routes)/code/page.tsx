@@ -61,8 +61,8 @@ const CodePage = () => {
   return ( 
     <div>
       <Heading
-        title="Code Generation"
-        description="Generate code using descriptive text."
+        title="Генерация кода"
+        description="Сгененируйте код по текстовому описанию."
         icon={Code}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"
@@ -93,7 +93,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading} 
-                        placeholder="Simple toggle button using react hooks." 
+                        placeholder="Простая кнопка переключения с использованием react hooks."
                         {...field}
                       />
                     </FormControl>
@@ -101,7 +101,7 @@ const CodePage = () => {
                 )}
               />
               <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-                Generate
+                Сгенерировать
               </Button>
             </form>
           </Form>
@@ -113,7 +113,7 @@ const CodePage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started." />
+            <Empty label="История генераций пуста." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (

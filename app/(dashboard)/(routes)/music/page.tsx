@@ -56,8 +56,8 @@ const MusicPage = () => {
   return ( 
     <div>
       <Heading
-        title="Music Generation"
-        description="Turn your prompt into music."
+        title="Генерация музыки"
+        description="Преврати текст в музыку."
         icon={Music}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"
@@ -87,7 +87,7 @@ const MusicPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading} 
-                      placeholder="Piano solo" 
+                      placeholder="Соло на фортепиано"
                       {...field}
                     />
                   </FormControl>
@@ -95,7 +95,7 @@ const MusicPage = () => {
               )}
             />
             <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-              Generate
+              Сгенерировать
             </Button>
           </form>
         </Form>
@@ -105,7 +105,7 @@ const MusicPage = () => {
           </div>
         )}
         {!music && !isLoading && (
-          <Empty label="No music generated." />
+          <Empty label="История генерации пуста." />
         )}
         {music && (
           <audio controls className="w-full mt-8">
